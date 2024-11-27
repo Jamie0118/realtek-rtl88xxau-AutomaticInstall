@@ -28,22 +28,10 @@ These chipsets are commonly used in USB Wi-Fi adapters such as:
 
 Make sure to confirm your adapter is using one of the supported chipsets before running the script.
 
-## Features
-
-- Checks for root privileges before execution.
-- Detects the Linux distribution and adjusts commands accordingly (`apt-get` or `dnf`).
-- Updates and installs necessary kernel headers.
-- Removes any existing driver installations.
-- Installs Realtek RTL88xxAU drivers via:
-  - **Package Manager**: For distributions offering the driver as a package.
-  - **Source Code**: Builds and installs the driver from the Aircrack-ng repository.
-- Optionally reboots the system after installation.
-
 ## Requirements
 
 - A Linux distribution based on **Debian/Ubuntu** or **RedHat/Fedora**.
 - Package manager support for `apt-get` or `dnf`.
-- Git installed for source installation.
 
 ## Installation
 
@@ -72,20 +60,6 @@ The script offers the following functionality:
 - Checks if a Realtek RTL88xxAU driver is already installed.
 - Removes existing driver installations if requested.
 - Allows you to choose between installing drivers using the package manager or from source.
-
-Example interaction:
-
-```text
-Driver already installed.
-Do you want to remove the existing installation? (y/n): y
-Removing existing driver installation...
-Do you want to install Realtek drivers using the package manager (1) or from the source (2)? Enter 1 or 2: 2
-Cloning the rtl8812au repository from Aircrack-ng...
-Compiling the driver...
-Installing the driver binaries...
-Install complete!
-Do you want to reboot now? (y/n): y
-```
 
 ## Troubleshooting
 

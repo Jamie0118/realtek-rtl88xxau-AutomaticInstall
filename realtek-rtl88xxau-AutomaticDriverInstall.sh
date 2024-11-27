@@ -1,3 +1,5 @@
+#!/bin/bash
+
 check_root() {
     if [[ $EUID -ne 0 ]]; then
         echo "This script must be run as root. Use 'sudo' before this script."
@@ -7,7 +9,7 @@ check_root() {
 
 check_distribution() {
     if [[ -f /etc/debian_version ]]; then
-        PACKAGE_MANAGER="apt"
+        PACKAGE_MANAGER="apt-get"
     elif [[ -f /etc/redhat-release ]]; then
         PACKAGE_MANAGER="dnf"
     else

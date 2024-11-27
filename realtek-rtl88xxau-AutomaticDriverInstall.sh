@@ -100,15 +100,16 @@ check_existing_driver() {
 }
 
 install_drivers() {
-        echo "Installing Realtek drivers"
+        echo "Installing drivers"
 
         echo "Cloning the rtl8812au repository from aircrack-ng..."
-        git clone https://github.com/aircrack-ng/rtl8812au
+        sudo apt-get install dkms
+        git clone https://github.com/n0ss/realtek-rtl88xxau-dkm
 
         echo "Building all necessary rtl8812 executable files into binary applications. This will take some time."
-        cd rtl8812au || { echo "Failed to change directory. Exiting."; exit 1; }
+        cd realtek-rtl88xxau-dkm || { echo "Failed to change directory. Exiting."; exit 1; }
 
-        echo "Cleaning previous builds..."
+        echo "Cleaning builds..."
         make clean
 
         echo "Compiling the driver..."

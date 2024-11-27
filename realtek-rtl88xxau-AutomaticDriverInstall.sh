@@ -7,7 +7,7 @@ check_root() {
 
 check_distribution() {
     if [[ -f /etc/debian_version ]]; then
-        PACKAGE_MANAGER="apt-get"
+        PACKAGE_MANAGER="apt"
     elif [[ -f /etc/redhat-release ]]; then
         PACKAGE_MANAGER="dnf"
     else

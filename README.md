@@ -37,7 +37,7 @@ Make sure to confirm your adapter is using one of the supported chipsets before 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jamie0118/realtek-rtl88xxau-AutomaticDriverInstall.git
+   git clone https://github.com/Jamie0118/realtek-rtl88xxau-AutomaticInstall
    cd realtek-rtl88xxau-AutomaticDriverInstall
    ```
 

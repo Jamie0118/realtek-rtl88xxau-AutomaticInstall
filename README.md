@@ -43,12 +43,12 @@ Make sure to confirm your adapter is using one of the supported chipsets before 
 
 2. Make the script executable:
    ```bash
-   chmod +x install.sh
+   chmod +x realtek-rtl88xxau-AutomaticDriverInstall.sh
    ```
 
 3. Run the script with root privileges:
    ```bash
-   sudo ./install.sh
+   sudo ./realtek-rtl88xxau-AutomaticDriverInstall.sh
    ```
 
 4. Follow the on-screen instructions to complete the installation.

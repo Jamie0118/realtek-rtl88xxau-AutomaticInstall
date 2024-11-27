@@ -14,10 +14,15 @@ The following Realtek chipsets are supported by this script (based on the RTL88x
 These chipsets are commonly used in USB Wi-Fi adapters such as:
 
 - TP-Link Archer T4U
+- TP-Link Archer T2U
+- TP-Link Archer T2UH
+- TP-Link Archer T4UH
 - TP-Link Archer T2U Plus
 - Alfa AWUS036AC
 - Alfa AWUS036ACH
+- Alfa AWUS036EAC
 - Edimax EW-7822UAC
+- ASUS USB-AC51
 - ASUS USB-AC56
 - Netgear A6210
 

@@ -102,7 +102,7 @@ check_existing_driver() {
 install_drivers() {
         echo "Installing drivers"
 
-        echo "Cloning the rtl8812au repository from aircrack-ng..."
+        echo "Cloning the rtl88xxau repository from aircrack-ng..."
         sudo apt-get install dkms
         git clone https://github.com/n0ss/realtek-rtl88xxau-dkm
 
@@ -140,7 +140,6 @@ read -p "Do you want to reboot now? (y/n): " REBOOT_CHOICE
 if [[ "$REBOOT_CHOICE" == "Y" || "$REBOOT_CHOICE" == "y" ]]; then
     echo "Rebooting!"
     reboot
-    fi
 else
     echo "Remember to restart"
     fi

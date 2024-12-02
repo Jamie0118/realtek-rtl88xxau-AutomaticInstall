@@ -113,7 +113,7 @@ install_drivers() {
         make clean
 
         echo "Compiling the driver..."
-        make
+        sudo ./dkms-install.sh
         if [[ $? -ne 0 ]]; then
             echo "Make command failed. Exiting."
             exit 1

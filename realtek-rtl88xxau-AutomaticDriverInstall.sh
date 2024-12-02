@@ -107,7 +107,7 @@ install_drivers() {
         git clone https://github.com/n0ss/realtek-rtl88xxau-dkms
 
         echo "Building all necessary rtl8812 executable files into binary applications. This will take some time."
-        cd realtek-rtl88xxau-dkm || { echo "Failed to change directory. Exiting."; exit 1; }
+        cd realtek-rtl88xxau-dkms || { echo "Failed to change directory. Exiting."; exit 1; }
 
         echo "Cleaning builds..."
         make clean

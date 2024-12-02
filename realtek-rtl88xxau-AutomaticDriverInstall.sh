@@ -104,7 +104,7 @@ install_drivers() {
 
         echo "Cloning the rtl88xxau repository from aircrack-ng..."
         sudo apt-get install dkms
-        git clone https://github.com/n0ss/realtek-rtl88xxau-dkm
+        git clone https://github.com/n0ss/realtek-rtl88xxau-dkms
 
         echo "Building all necessary rtl8812 executable files into binary applications. This will take some time."
         cd realtek-rtl88xxau-dkm || { echo "Failed to change directory. Exiting."; exit 1; }
